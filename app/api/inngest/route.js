@@ -3,10 +3,10 @@ import { inngest, syncUserCreation, syncUserDeletion, syncUserUpdation } from "@
 
 // Create an API that serves the functions
 export const { GET, POST, PUT } = serve({
-  client: inngest, 
+  client: inngest,
   functions: [
     syncUserCreation,
     syncUserUpdation,
-    syncUserDeletion, 
+    syncUserDeletion,
   ],
 });
