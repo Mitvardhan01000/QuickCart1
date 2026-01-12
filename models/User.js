@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
     name: { type: String, required: true },
     name: { type: String, required: true, unique: true },
     imageUrl: { type: String, required: true },
-    imageUrl: { type: Object, default: {} },
+    cartItems: { type: Object, default: {} },
 }, { minimize: false })
 
 const User = mongoose.models.users || mongoose.model('user',userSchema)

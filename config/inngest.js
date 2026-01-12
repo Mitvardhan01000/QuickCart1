@@ -60,3 +60,4 @@ export const syncUserDeletion = inngest.createFunction(
     await User.findByIdAndDelete(id);
   }
 );
+ 
