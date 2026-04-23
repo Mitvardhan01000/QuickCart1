@@ -34,7 +34,7 @@ import { NextResponse } from "next/server";
         })
 
         //clear user cart
-        const user = await User.findById(user)
+        const user = await User.findById(userId )
         user.cartItems = {}
         await user.save()
 
