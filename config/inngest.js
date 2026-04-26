@@ -90,12 +90,10 @@ export const createUserOrder = inngest.createFunction(
     console.log(orders)
 
     await connectDb();
-try {
+
   await Order.insertMany(orders);
-  console.log("Orders inserted successfully");
-} catch (error) {
-  console.error("InsertMany Error:", error);
-}
+  
+
 
     
 
